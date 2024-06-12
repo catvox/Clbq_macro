@@ -10,7 +10,7 @@ LC = 1
 MC = 2
 RC = 3 --right click
 FC = 4 --right click	
-LockKey = "numlock"
+LockKey = "capslock"
 Sensrelative = REEcoil / 1000
 
 EnablePrimaryMouseButtonEvents(true);

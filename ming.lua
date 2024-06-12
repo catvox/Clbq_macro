@@ -10,14 +10,14 @@ LC = 1
 MC = 2
 RC = 3 --right click
 FC = 4 --right click	
-LockKey = "numlock"
+LockKey = "capslock"
 Sensrelative = REEcoil / 1000
 
 EnablePrimaryMouseButtonEvents(true);
 Recoil = false
 -------------------------开镜后座参数------------------------
-local Xstep = { 0, 1, 1, 4, 5, 5, 5, -1, 4, 5, 0, -1, -5, -5, -2, -1, -2, 3, 4, 2, 4, 4, 2, 3, 2, -1, -1, -4, -10, -10,-9}
-local Ystep = { 0, 7, 7, 7, 12, 15, 15, 12, 12, 12, 8, 9, 10, 10, 8, 8, 8, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 12, 12, 12}
+local Xstep = { 0, 1, 1, 4, 5, 5, 5, -1, 4, 5, 0, -1, -5, -5, -2, -1, -2, 3, 4, 2, 4, 4, 2, 3, 2, -1, -1, -4, -10, -10, -9 }
+local Ystep = { 0, 7, 7, 7, 12, 15, 15, 12, 12, 12, 8, 9, 10, 10, 8, 8, 8, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 12, 12, 12 }
 local Tstep = 98
 local capacity = 29
 
@@ -48,7 +48,7 @@ function OnEvent(event, arg)
                 PressKey("lshift")
                 JNoRecoil()
             until not IsMouseButtonPressed(LC)
-            Sleep(math.random(5,8))
+            Sleep(math.random(5, 8))
             ReleaseKey("lshift")
         end
     end
